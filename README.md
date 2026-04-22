@@ -2,7 +2,7 @@
 
 Minimal, unified training & inference for **YOLO** (v3–v11) and **DETR-family** (DETR, Conditional DETR, Deformable DETR, DETA, RT-DETR, YOLOS).
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -18,7 +18,7 @@ Minimal, unified training & inference for **YOLO** (v3–v11) and **DETR-family*
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 pip install -r requirements.txt
@@ -33,8 +33,8 @@ python train_detr.py --model detr-resnet-50 --epochs 50
 
 ---
 
-## 🏗 Supported Models
-
+## Supported Models
+             
 ### YOLO Versions
 
 ```bash
@@ -80,7 +80,7 @@ python train_detr.py --model yolos-tiny --num_labels 5
 
 ---
 
-## 📦 Dataset Options
+## Dataset Options
 
 Edit `config.yaml → dataset:` section. Three sources supported:
 
@@ -108,12 +108,12 @@ dataset:
 ```yaml
 dataset:
   source: "yolo"
-  root: "./data"              # images/{train,val} + labels/{train,val}
+  root: "./data"              # images/{train,val} + labels/{train,v al}
 ```
 
 ---
 
-## 🏋️ Training
+##  Training
 
 ### Unified dispatcher
 
@@ -146,21 +146,21 @@ python train_detr.py --model deformable-detr --epochs 100 --lr 0.0001 --no_wandb
 | `--no_wandb` | Disable W&B |
 | `--list_models` | Show available model versions |
 
-## 🔍 Inference
+##   Inference
 
 ```bash
 python inference.py --model_type yolo --weights runs/best.pt --source ./images/
 python inference.py --model_type detr --weights runs/best_detr.pth --device cpu
 ```
 
-## 📤 ONNX Export
+## ONNX Export
 
 ```bash
 python export_onnx.py --model_type yolo --weights runs/best.pt
 python export_onnx.py --model_type detr --weights runs/best_detr.pth --opset 17
 ```
 
-## 📊 W&B
+## W&B
 
 ```yaml
 wandb:

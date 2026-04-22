@@ -1,0 +1,23 @@
+# ── Core ──
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ── YOLO ──
+ultralytics>=8.0.0
+
+# ── DETR (HuggingFace) ──
+transformers>=4.30.0
+
+# ── Dataset & Utilities ──
+pycocotools>=2.0.6
+Pillow>=9.0.0
+tqdm>=4.65.0
+datasets>=2.14.0
+pyyaml>=6.0
+
+# ── Logging ──
+wandb>=0.15.0
+
+# ── Export ──
+onnx>=1.14.0
+onnxruntime>=1.15.0

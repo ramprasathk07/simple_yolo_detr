@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+venv/
+runs/
+coco8/
+
+*.pt
+
 # Distribution / packaging
 .Python
 build/
